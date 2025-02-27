@@ -1,0 +1,21 @@
+NT1 = float(input())
+NT2 = float(input())
+NT3 = float(input())
+P1 = float(input())
+P2 = float(input())
+
+T = (NT1 + NT2 + NT3)/3
+NF = 0.2*T + 0.4*P1 + 0.4*P2
+#NF=0.2T+0.4P1+0.4P2
+
+print("%.2f" %NF)
+if NF >= 9:
+    print("A")
+elif NF >= 7.5 and NF < 9:
+    print("B")
+elif NF >= 6 and NF < 7.5:
+    print("C")
+elif NF >= 5 and NF < 6:
+    print("D")
+else:
+    print("F")
